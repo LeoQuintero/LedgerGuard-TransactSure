@@ -1,16 +1,22 @@
 # LedgerGuard-TransactSure
 Data Quality Automation for Fintech/Banking
 
-MVP (Lo que vamos a construir HOY)
-├── 3 tablas core: customers, accounts, transactions
-├── 10K registros con Faker
-├── 2-3 controles SQL que demuestren criterio
-└── Todo funcionando y en GitHub
+# 🚀 Roadmap del Proyecto: Data Quality MVP
 
-Iteración 2 (después)
-├── Agregar Insurance (policies, claims)
-├── Escalar a 100K registros
-└── FastAPI encima de los controles SQL
+## 📍 MVP (Lo que vamos a construir HOY)
+* **Estructura Base:** Creación de 3 tablas core: `customers`, `accounts` y `transactions`.
+* **Volumen de Datos:** Generación de **10K registros** realistas utilizando la librería `Faker`.
+* **Lógica de Negocio:** Implementación de **2-3 controles SQL** estratégicos que demuestren criterio técnico (ej. validación de saldos, integridad de transacciones).
+* **Entrega:** Código desplegado y funcional en **GitHub**.
 
-Iteración 3 (después)
-└── AWS S3 logs con boto3
+---
+
+## 🏗️ Iteración 2 (Siguiente Paso)
+* **Expansión del Modelo:** Integración del módulo de **Insurance** (`policies`, `claims`).
+* **Escalabilidad:** Optimización para manejar un volumen de **100K registros**.
+* **Interfaz:** Desarrollo de una **API con FastAPI** para exponer los resultados de los controles SQL.
+
+---
+
+## ☁️ Iteración 3 (Futuro)
+* **Cloud Integration:** Implementación de logs y almacenamiento en **AWS S3** utilizando la librería `boto3`.
