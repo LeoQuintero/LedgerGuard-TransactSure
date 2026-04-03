@@ -21,6 +21,7 @@ class Customer(Base):
         # puedas hacer customer.accounts y Python te devuelva automáticamente una lista con todas sus cuentas
     accounts = relationship("Account", back_populates="customer")
     policies = relationship("Policy",  back_populates="customer")
+    
 
 class Account(Base):
     __tablename__ = "accounts"
@@ -41,6 +42,7 @@ class Account(Base):
     customer     = relationship("Customer", back_populates="accounts")
     transactions = relationship("Transaction", back_populates="account")    
 
+
 class Transaction(Base):
     __tablename__ = "transactions"
 
@@ -60,6 +62,7 @@ class Transaction(Base):
 
     # Relationships
     account = relationship("Account", back_populates="transactions")
+
 
 class Policy(Base):
     __tablename__ = "policies"

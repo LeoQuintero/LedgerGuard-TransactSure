@@ -36,7 +36,7 @@ The core value is not the API itself — it is the **10 SQL data quality control
 - PostgreSQL database setup with dedicated user and permissions
 - SQLAlchemy connection layer with environment-based configuration
 - Data models: `customers`, `accounts`, `transactions`, `policies`, `claims`
-- 100K realistic records generated with Faker
+- 11K realistic records generated with Faker
 
 ### ⏳ Sprint 2 — SQL Intelligence
 - 10 SQL data quality controls covering:
@@ -67,7 +67,7 @@ LedgerGuard-TransactSure/
 │   ├── transactions/        # Transaction domain logic
 │   └── insurance/           # Insurance domain logic
 ├── data/
-│   └── seed_data.py         # 100K record generation with Faker
+│   └── seed_data.py         # 11K record generation with Faker
 ├── sql_validations/         # SQL quality control scripts
 ├── .env                     # Environment variables (not committed)
 ├── requirements.txt         # Pinned dependencies
